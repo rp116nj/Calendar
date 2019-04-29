@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.reminder {
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 3px;
+}
+  
+  .month-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .weekdays {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  background: #111;
+  border-bottom: 2px solid #000;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+  }
+  .weekdays strong {
+    flex: 1 0 14.28%;
+    max-width: calc(100% / 7);
+    text-align: center;
+  }
+  .month .days {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -3px;
+  }
