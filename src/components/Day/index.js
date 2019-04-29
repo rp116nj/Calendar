@@ -70,7 +70,7 @@ class Day extends React.Component {
   };
 
   render() {
-    console.log('prrops', this.props);
+    // console.log('prrops', this.props);
     const reminders =
       _sortBy(this.props.reminders[this.props.date], 'time') || [];
 
